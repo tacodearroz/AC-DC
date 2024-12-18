@@ -15,17 +15,15 @@ public class deahtbox : MonoBehaviour
     {
         
     }
-    void OnTriggerEnter(Collider  other)
+    void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.CompareTag("Player"))
         {
-            GetComponent<Collider>().gameObject.SetActive(false);
-
-
-
+            other.gameObject.GetComponent<playermanage>().Respawn();
         }
 
-
-
     }
+
+
 }
+

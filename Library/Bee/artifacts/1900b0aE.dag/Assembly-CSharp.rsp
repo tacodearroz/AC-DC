@@ -356,7 +356,8 @@
 "Assets/Scripts/deahtbox.cs"
 "Assets/Scripts/FloorTrigger.cs"
 "Assets/Scripts/Movimiento.cs"
-"Assets/Scripts/Movimiento1.cs"
+"Assets/Scripts/playermanage.cs"
+"Assets/Scripts/respawnpoint.cs"
 -langversion:9.0
 
 /deterministic

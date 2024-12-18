@@ -21,14 +21,23 @@ public class FloorTrigger : MonoBehaviour
 
 
     public void OnTriggerExit(Collider collision){
-        mov.isGrounded = false;
+        if (!collision.isTrigger)
+        {
+            mov.isGrounded = false;
+        }
     }
 
     public void OnTriggerStay(Collider collision){
-        mov.isGrounded = true;
+        if (!collision.isTrigger)
+        {
+            mov.isGrounded = true;
+        }
     }
 
     public void OnTriggerEnter (Collider collision){
-        mov.doubleJump = mov.maxDJump;
+        if (!collision.isTrigger)
+        {
+            mov.doubleJump = mov.maxDJump;
+        }
     }
 }
